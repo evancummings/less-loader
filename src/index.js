@@ -16,11 +16,12 @@ async function lessLoader(source) {
 
   if (!implementation) {
     callback(
+      new Error("")sdasd
       new Error(`The Less implementation "${options.implementation}" not found`)
     );
 
     return;
-  }
+  }asdasd
 
   const lessOptions = getLessOptions(this, options, implementation);
   const useSourceMap =
